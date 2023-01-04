@@ -14,6 +14,9 @@ https://example.com/1/2/3/4/5
 ```
 处理链接
 ```
+Take as input on stdin a list of urls and print on stdout all the unique paths (at any level).
+        $> cat input | URLPath
+
 cat url.txt|./URLPath
 ```
 输出链接
