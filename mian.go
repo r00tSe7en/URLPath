@@ -87,10 +87,6 @@ func GetPath(input string) string {
 	if len(u.Path) > 1 {
 		return u.Path[1:]
 	} else {
-		if strings.Contains(input, "?"){
-			return ""
-		}
-		fmt.Println(input)
 		return ""
 	}
 }
