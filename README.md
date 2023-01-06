@@ -1,6 +1,25 @@
 # URLPath
 批量处理url链接，获取多级路径并打印
 
+# 1.配合爬虫使用
+
+这里联动projectdiscovery的katana爬虫，拿特斯拉官网测试，最终结果是1441行并无重复
+
+https://github.com/projectdiscovery/katana
+```
+katana -u https://tesla.com | ./URLPath | tee result.txt
+...
+   ...
+   
+wc -l result.txt
+1441 //统计行数
+
+cat result.txt | uniq | wc -l
+1441 //uniq去重后统计行数
+```
+
+# 2.处理链接文本
+
 链接文本
 ```
 http://example.com
@@ -32,5 +51,6 @@ https://example.com/1/2/3
 https://example.com/1/2/3/4
 https://example.com/1/2/3/4/5
 ```
+
 # 参考
 https://github.com/edoardottt/lit-bb-hack-tools/tree/main/cleanpath
