@@ -30,6 +30,7 @@ https://example.com/1.pdf
 https://example.com/books/all/1.pdf
 https://example.com/1/2/3
 https://example.com/1/2/3/4/5
+https://example.com/?id=1
 ```
 处理链接
 ```
@@ -40,7 +41,7 @@ cat url.txt|./URLPath
 ```
 输出链接
 ```
-http://example.com
+(提示：无path的url不会打印)
 http://example.com/api
 http://example.com/Api
 https://example.com/books
