@@ -87,6 +87,9 @@ func GetPath(input string) string {
 	if len(u.Path) > 1 {
 		return u.Path[1:]
 	} else {
+		if strings.Contains(input, "?"){
+			return ""
+		}
 		fmt.Println(input)
 		return ""
 	}
@@ -107,7 +110,7 @@ func GetAllLevelsPaths(input string,url string) []string {
 	var elems = strings.Split(input, "/")
 	var tmpurl = strings.Split(url, "/")
 	if len(elems) == 2 {
-		if strings.Contains(elems[0], ".") {
+		if strings.Contains(elems[0], ".") || strings.Contains(elems[0], "?") {
 			return []string{}
 		}
 		return []string{tmpurl[0]+"//"+tmpurl[2]+"/"+elems[0]}
@@ -122,7 +125,7 @@ func GetAllLevelsPaths(input string,url string) []string {
 			if strings.Contains(elems[j], "*") || elems[j] == "*" {
 				break
 			}
-			if strings.Contains(elems[j], ".") {
+			if strings.Contains(elems[j], ".") || strings.Contains(elems[j], "?") {
 				break
 			}
 			resTemp := strings.Join(elems[:j+1], "/")
