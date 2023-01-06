@@ -31,6 +31,7 @@ https://example.com/books/all/1.pdf
 https://example.com/1/2/3
 https://example.com/1/2/3/4/5
 https://example.com/?id=1
+https://example.com/test/?id=1
 ```
 处理链接
 ```
@@ -51,6 +52,7 @@ https://example.com/1/2
 https://example.com/1/2/3
 https://example.com/1/2/3/4
 https://example.com/1/2/3/4/5
+https://example.com/test
 ```
 
 # 参考
