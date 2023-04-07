@@ -1,5 +1,6 @@
 # URLPath
-批量处理url链接，获取多级路径并打印
+
+![URLPath](https://socialify.git.ci/r00tSe7en/URLPath/image?description=1&forks=1&issues=1&language=1&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Dark)
 
 # 1.配合爬虫使用
 
