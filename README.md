@@ -37,9 +37,13 @@ https://example.com/test/?id=1
 处理链接
 ```
 Take as input on stdin a list of urls and print on stdout all the unique paths (at any level).
-        $> cat input | URLPath
+        $> cat input | URLPath -l 2 
+        -l x is specify number of path levels to print. -1 or no parameters specified to print all path levels.
+         
 
-cat url.txt|./URLPath
+1. cat url.txt|./URLPath  //打印全部级别路径
+
+2. cat url.txt|./URLPath -l 2  //打印2级以下级别路径
 ```
 输出链接
 ```
